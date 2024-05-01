@@ -34,7 +34,7 @@ cd mmVR
 python train_kpt.py 
 ```
 
-- Train and test model by keypoint (stage2)::
+- Train and test model by keypoint (stage2):
 
 ```bash
 python train_cls.py 
