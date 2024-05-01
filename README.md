@@ -43,47 +43,45 @@ python train_cls.py
 ### File Structrue
 ```bash
 .
-│  dml_eval.py
-│  dml_train.py
-│  environment.yaml
-│  generate_txt.py
-│  opts.py
-│  README.md
-│  requirements.txt
-│  split_train_test.py
-│  XRFDataset.py
+│  config.py
+│  train_cls.py
+│  train_kpt.py
+│  
+├─data
+│  │  eval_list.txt
+│  │  train_list.txt
+│  │  
+│  ├─imu
+│  │      XX_XX_XX_XX.npy
+│  │      
+│  ├─kpt_gt
+│  │      XX_XX_XX_XX.npy
+│  │      
+│  ├─kpt_output
+│  │      XX_XX_XX_XX.npy
+│  │      
+│  └─mmwave
+│          XX_XX_XX_XX.mat
+│          
 ├─dataset
-│  ├─Raw_dataset
-│  │  ├─mmWave
-│  │  │      XX_XX_XX.npy
-│  │  ├─RFID
-│  │  │      XX_XX_XX.npy
-│  │  └─WiFi
-│  │          XX_XX_XX.npy
-│  └─XRF_dataset
-│      ├─test_data
-│      │  ├─mmWave
-│      │  │      XX_XX_XX.npy
-│      │  ├─RFID
-│      │  │      XX_XX_XX.npy
-│      │  └─WiFi
-│      │          XX_XX_XX.npy
-│      └─train_data
-│          ├─mmWave
-│          │      XX_XX_XX.npy
-│          ├─RFID
-│          │      XX_XX_XX.npy
-│          └─WiFi
-│                  XX_XX_XX.npy  
-├─model
-│      resnet1d.py
-│      resnet1d_rfid.py
-│      resnet2d.py
-├─result
+│      datasets.py
+│      dataset_kpt.py
+│      
+├─experiments
 │  ├─conf_matrix
-│  ├─learning_curve
-│  ├─params
+│  ├─param
+│  ├─savept
 │  └─weights
-└─word2vec
-        bert_new_sentence_large_uncased.npy
+├─logs
+├─models
+│      backbone.py
+│      mmVR_Transformer.py
+│      position_encoding.py
+│      ResNet.py
+│      Transformer_layers.py
+│      
+└─utils
+        loss.py
+        matcher.py
+        misc.py
 ```
