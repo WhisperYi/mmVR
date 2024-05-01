@@ -46,6 +46,8 @@ python train_cls.py
 │  config.py
 │  train_cls.py
 │  train_kpt.py
+│  requirements.txt
+│  environment.yaml
 │  
 ├─data
 │  │  eval_list.txt
