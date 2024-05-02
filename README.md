@@ -25,7 +25,7 @@ cd mmVR
 
 ### mmVR dataset
 
-- Download [mmVR_dataset](https://www.kaggle.com/xrfdataset/xrf55):
+- Download [mmVR_dataset](https://kaggle.com/datasets/cdf079d9f49052500a08482b692eac6758d83e6b1ba9868d677c5cb814c427aa):
   - Download the `dataset.zip`, unzip it and move it to `./data/`
 
 - Train and test model by mmwave + imu (stage1):
