@@ -40,7 +40,7 @@ python train_kpt.py
 python train_cls.py 
 ```
 
-### File Structrue
+### File Structure
 ```bash
 .
 │  config.py
